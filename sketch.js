@@ -33,9 +33,10 @@ function draw() {
 };
 
 function mouseClicked() {
-  if (value == 0 && mouseX > 210 && mouseX < 265 && mouseY > 425 && mouseY < 480) {
+  if (mouseX > 210 && mouseX < 265 && mouseY > 425 && mouseY < 480) {if (value == 0) {
       value = 255;
   } else {
-    value = 0;  
-  };
+      value = 0;
+    }
+  }
 };
