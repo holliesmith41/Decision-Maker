@@ -27,6 +27,15 @@ function draw() {
       g += 3;
       b -= 4;
     };
+    
     fill(value);
     var button = rect(210, 425, 55, 55, 20);
+};
+
+function mouseClicked() {
+  if (value == 0 && mouseX > 210 && mouseX < 265 && mouseY > 425 && mouseY < 480) {
+      value = 255;
+  } else {
+    value = 0;  
+  };
 };
